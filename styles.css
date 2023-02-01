@@ -3,11 +3,12 @@ body {
   font-family: arial, sans-serif;
   display: block;
   border: 1px solid black;
-  margin: 0 auto;
-  padding: 40px;
+  margin: 50px auto;
   max-width: 800px;
+  padding: 40px;
   color: #142d4c;
 }
+
 input {
   position: relative;
   left: 60%;
@@ -15,6 +16,8 @@ input {
   font-size: 15px;
   text-align: center;
   padding: 10px 15px;
+  font-weight: 100px;
+  font-size: medium;
 }
 h1 {
   color: #142d4c;
@@ -23,14 +26,25 @@ h1 {
   padding-top: 20px;
   width: 75%;
 }
-h2 {
+.temperature {
   color: #9fd3c7;
-  font-size: 60px;
+  font-size: 80px;
   font-weight: bolder;
   position: relative;
-  left: 220px;
-  text-align: center;
+  left: 400px;
+  top: -80px;
+  text-align: right;
   width: 75%;
+}
+.unitsCelsius,
+.unitsFarenheit {
+  font-size: 20px;
+  position: relative;
+}
+.unitsCelsius:hover,
+.unitsFarenheit:hover {
+  transition: all 200ms ease;
+  font-size: 24px;
 }
 .current-date-id {
   font-weight: bold;
@@ -52,14 +66,21 @@ p {
   text-align: left;
 }
 
-.card {
+.weather-forecast {
+  margin-top: 20px;
   text-align: center;
-  max-width: 100%;
+  color: #000;
 }
 
-.card :hover {
-  font-size: 26px;
-  font-weight: bold;
-  color: #9fd3c7;
-  transition: all 200ms ease;
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
+
+.weather-forecast-temperatures {
+  font-size: 13px;
 }
