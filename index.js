@@ -50,8 +50,8 @@ function displayWeather(response) {
 }
 
 function searchCity(city) {
-  let apiKey = "d3de511f6a866b1defffe26ed2efc57e";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  let apiKey = "4368ot5e9149d5a5bd05b09133f063bf";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=Minneapolis&key={key}`;
   axios.get(apiUrl).then(displayWeather);
 }
 
@@ -62,8 +62,8 @@ function handleSubmit(event) {
 }
 
 function searchLocation(position) {
-  let apiKey = "d3de511f6a866b1defffe26ed2efc57e";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+  let apiKey = "4368ot5e9149d5a5bd05b09133f063bf";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?lon={lon}&lat={lat}&key={key}`;
   axios.get(apiUrl).then(showWeather);
 }
 
