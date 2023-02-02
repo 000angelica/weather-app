@@ -21,20 +21,22 @@ body {
   line-height: 20px;
   padding: 15px 20px;
 }
+
 #search-btn,
 .btn {
   background: #79cbc9;
-  color: #e3e3e3;
+  color: whitesmoke;
   border-radius: 10px;
   border: none;
   font-size: 20px;
   font-weight: 700;
   height: 40px;
   text-align: center;
+  box-shadow: 3px 3px 15px 1px rgba(87, 88, 88, 0.3);
 }
 
 h1 {
-  color: #dbd8e3;
+  color: #e3e3e3;
   font-size: 60px;
   font: helvetica;
   font-weight: bold;
@@ -62,6 +64,9 @@ h1 {
   width: 500px;
   justify-content: flex-end;
 }
+#icon {
+  width: 30%;
+}
 .col-5 {
   color: #e3e3e3;
   font-size: 80px;
@@ -75,18 +80,19 @@ h1 {
   text-align: right;
   margin-right: 120px;
   margin-top: 25px;
-  cursor: default;
 }
 #fahrenheit-link,
 #celsius-link {
   color: #e3e3e3;
+  text-decoration: none;
 }
+
 #fahrenheit-link:hover,
 #celsius-link:hover {
   transition: all 200ms ease;
   font-size: 24px;
   color: #072d66;
-  text-decoration: none;
+  cursor: default;
 }
 
 ul {
@@ -110,4 +116,21 @@ li {
 .source {
   margin: 80px;
   font-family: "Times New Roman", Times, serif;
+  color: #79cbc9;
+  padding: 10px;
+  border-radius: 6px;
+  background: linear-gradient(
+    109.6deg,
+    rgb(121, 203, 202) 11.2%,
+    rgb(119, 161, 211) 91.1%
+  );
+}
+.source {
+  color: #e3e3e3;
+}
+.source :hover {
+  color: #e3e3e3;
+  font-size: 15px;
+  cursor: default;
+  text-decoration: none;
 }
