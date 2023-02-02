@@ -1,14 +1,18 @@
 body {
   background-color: mintcream;
   font-family: arial, sans-serif;
-  display: block;
-  border: 1px solid black;
-  margin: 50px auto;
-  max-width: 800px;
-  padding: 40px;
+
   color: #142d4c;
 }
+.container {
+  border: 1px solid black;
+  border-radius: 5px;
+  display: block;
+  margin: 50px auto 0px auto;
 
+  max-width: 800px;
+  padding: 40px;
+}
 input {
   position: relative;
   left: 60%;
@@ -20,26 +24,36 @@ input {
   font-size: medium;
 }
 h1 {
-  color: #142d4c;
+  color: orange;
   font-size: 60px;
+  font: helvetica;
   font-weight: bold;
   padding-top: 20px;
   width: 75%;
 }
-.temperature {
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+
+  justify-grow: 1;
+}
+.temp-flex {
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+  justify-content: flex-end;
+}
+.col-5 {
   color: #9fd3c7;
   font-size: 80px;
   font-weight: bolder;
-  position: relative;
-  left: 400px;
-  top: -80px;
   text-align: right;
-  width: 75%;
 }
-.unitsCelsius,
-.unitsFarenheit {
+.temperature {
   font-size: 20px;
-  position: relative;
+  text-align: right;
+  margin-right: 120px;
 }
 .unitsCelsius:hover,
 .unitsFarenheit:hover {
@@ -65,7 +79,9 @@ p {
   color: #142d4c;
   text-align: left;
 }
-
+#description {
+  text-transform: capitalize;
+}
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
@@ -83,4 +99,7 @@ p {
 
 .weather-forecast-temperatures {
   font-size: 13px;
+}
+.source {
+  margin: 280px;
 }
