@@ -94,10 +94,10 @@ function convertToFarenheit(event) {
   let temperatureElement = document.querySelector(".unitsFarenheit");
   temperatureElement.innerHTML = 24;
 }
+searchCity("Minneapolis");
+
 let searchForm = document.querySelector("#search-form-id");
 searchForm.addEventListener("submit", handleSubmit);
 
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
-
-searchCity("Minneapolis");
