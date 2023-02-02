@@ -17,7 +17,7 @@
         <form id="search-form-id" class="mb-3">
           <div class="row">
             <div class="col-9">
-              <input type="search" id="search-input" type="text" placeholder=" Search for a City" autocomplete="off"
+              <input type="search" id="search-input" type="text" placeholder="Enter a City..." autocomplete="off"
                 class="form-control search-input" />
             </div>
             <div class="col-3 p-0" id="search-btn">
@@ -59,17 +59,14 @@
               <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png" alt="clear-sky-day"
                 id="icon" />
               <div id="current-temperature">
-                24
               </div>
               <div class="temperature" id="temperature">
-                <span class="unitsCelsius">
-                  <a href="#">
+                <span class="units">
+                  <a href="#" id="celsius-link" class="active">
                     °C
                   </a>
                   |
-                </span>
-                <span class="unitsFarenheit">
-                  <a href="#">
+                  <a href="#" id="fahrenheit-link">
                     °F
                   </a>
                 </span>

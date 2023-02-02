@@ -67,16 +67,26 @@ h1 {
   font-size: 80px;
   font-weight: bolder;
   text-align: right;
+  text-decoration: none;
 }
 .temperature {
-  font-size: 20px;
+  color: #e3e3e3;
+  font-size: 15px;
   text-align: right;
   margin-right: 120px;
+  margin-top: 25px;
+  cursor: default;
 }
-.unitsCelsius:hover,
-.unitsFarenheit:hover {
+#fahrenheit-link,
+#celsius-link {
+  color: #e3e3e3;
+}
+#fahrenheit-link:hover,
+#celsius-link:hover {
   transition: all 200ms ease;
-  font-size: 23px;
+  font-size: 24px;
+  color: #072d66;
+  text-decoration: none;
 }
 
 ul {
