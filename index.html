@@ -14,15 +14,14 @@
   <div class="container">
     <div class="weather-app-wrapper">
       <div>
-        <form id="search-form-id">
+        <form id="search-form-id" class="mb-3">
           <div class="row">
-            <div class="col-6">
+            <div class="col-9">
               <input type="search" id="search-input" type="text" placeholder=" Search for a City" autocomplete="off"
-                autofocus="on" class="shadow-sm p-3 mb-5 bg-body-tertiary rounded" />
+                class="form-control search-input" />
             </div>
-            <div class="col-3">
-              <input type="submit" value="🔍 Search"
-                class="search-button shadow-sm p-3 mb-5 bg-body-tertiary rounded w-100" />
+            <div class="col-3 p-0" id="search-btn">
+              <input type="submit" value="🔍 Search" class="btn btn primary w-100" />
             </div>
           </div>
         </form>
@@ -63,15 +62,15 @@
                 24
               </div>
               <div class="temperature" id="temperature">
-                <span class="unitsFarenheit">
-                  <a href="#">
-                    °F
-                  </a>
-                  |
-                </span>
                 <span class="unitsCelsius">
                   <a href="#">
                     °C
+                  </a>
+                  |
+                </span>
+                <span class="unitsFarenheit">
+                  <a href="#">
+                    °F
                   </a>
                 </span>
               </div>
@@ -81,6 +80,7 @@
       </div>
     </div>
   </div>
+  <br>
   <small class="source">
     <a href="https://github.com/000angelica/weather-app" target="_blank"> Open-Source Code</a> by Angelica
     Morales

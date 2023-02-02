@@ -1,30 +1,40 @@
 body {
-  background-color: mintcream;
-  font-family: arial, sans-serif;
-
-  color: #142d4c;
+  background: whitesmoke;
 }
 .container {
-  border: 1px solid black;
-  border-radius: 5px;
+  border-radius: 8px;
   display: block;
   margin: 50px auto 0px auto;
-
   max-width: 800px;
   padding: 40px;
+  background: linear-gradient(
+    109.6deg,
+    rgb(121, 203, 202) 11.2%,
+    rgb(119, 161, 211) 91.1%
+  );
+  box-shadow: 5px 5px 6px 2px rgba(146, 147, 147, 0.8);
 }
-input {
-  position: relative;
-  left: 60%;
-  margin-top: 20px;
-  font-size: 15px;
+#search-form-id {
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 15px 20px;
+}
+#search-btn,
+.btn {
+  background: #79cbc9;
+  color: #e3e3e3;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+  height: 40px;
   text-align: center;
-  padding: 10px 15px;
-  font-weight: 100px;
-  font-size: medium;
 }
+
 h1 {
-  color: orange;
+  color: #dbd8e3;
   font-size: 60px;
   font: helvetica;
   font-weight: bold;
@@ -35,8 +45,16 @@ h1 {
   display: flex;
   flex-direction: row;
   width: 600px;
-
-  justify-grow: 1;
+}
+.col-6 {
+  text-transform: capitalize;
+  font-family: Verdana;
+  color: #e3e3e3;
+  font-size: 20px;
+  font-weight: 100;
+}
+#current-date-id {
+  font-size: 26px;
 }
 .temp-flex {
   display: flex;
@@ -45,7 +63,7 @@ h1 {
   justify-content: flex-end;
 }
 .col-5 {
-  color: #9fd3c7;
+  color: #e3e3e3;
   font-size: 80px;
   font-weight: bolder;
   text-align: right;
@@ -58,12 +76,9 @@ h1 {
 .unitsCelsius:hover,
 .unitsFarenheit:hover {
   transition: all 200ms ease;
-  font-size: 24px;
+  font-size: 23px;
 }
-.current-date-id {
-  font-weight: bold;
-  font-size: 30px;
-}
+
 ul {
   margin: 0;
   padding: 0;
@@ -74,24 +89,6 @@ li {
   padding: 0;
   font-size: 20px;
 }
-p {
-  font-size: 26px;
-  color: #142d4c;
-  text-align: left;
-}
-#description {
-  text-transform: capitalize;
-}
-.weather-forecast {
-  margin-top: 20px;
-  text-align: center;
-  color: #000;
-}
-
-.weather-forecast-date {
-  font-size: 16px;
-  opacity: 0.5;
-}
 
 .weather-forecast-temperature-min {
   opacity: 0.5;
@@ -101,5 +98,6 @@ p {
   font-size: 13px;
 }
 .source {
-  margin: 280px;
+  margin: 80px;
+  font-family: "Times New Roman", Times, serif;
 }
