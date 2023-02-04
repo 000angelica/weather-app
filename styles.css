@@ -74,25 +74,13 @@ h1 {
   text-align: right;
   text-decoration: none;
 }
-.temperature {
+#temperature {
   color: #e3e3e3;
   font-size: 15px;
   text-align: right;
   margin-right: 120px;
   margin-top: 25px;
-}
-#fahrenheit-link,
-#celsius-link {
-  color: #e3e3e3;
   text-decoration: none;
-}
-
-#fahrenheit-link:hover,
-#celsius-link:hover {
-  transition: all 200ms ease;
-  font-size: 24px;
-  color: #072d66;
-  cursor: default;
 }
 
 ul {
