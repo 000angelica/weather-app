@@ -93,24 +93,36 @@ li {
   padding: 0;
   font-size: 20px;
 }
-.weather-forcast {
-  margin-top: 40px;
+.weather-forecast {
   text-align: center;
   color: rgba(0, 0, 0, 0.6);
   font-family: Cerebri-Sans, Helvetica, Arial, sans-serif;
   padding: 7px;
 }
+
 .weather-forecast-day {
   font-size: 16px;
+  font-weight: bold;
+  color: #4f4881;
 }
 .weather-forecast-temp {
   font-size: 14px;
 }
+.col-2 {
+  background-color: whitesmoke;
+  opacity: 0.8;
+  border-radius: 7px;
+  justify-content: space-around;
+  padding: 30px 20px;
+  margin: 20px auto;
+}
+#forecast-container {
+  background-color: white;
+}
+.weather-forecast-temp-max {
+}
 .weather-forecast-temp-min {
   opacity: 0.6;
-}
-
-.weather-forecast-temp-max {
 }
 
 .source {
