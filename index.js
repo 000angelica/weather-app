@@ -50,7 +50,7 @@ function formatDay(timestamp) {
 
 function displayForecast(response) {
   let forecast = response.data.daily;
-  console.log("forecast: ", forecast);
+
   let forecastElement = document.querySelector("#forecast-id");
 
   let forecastHTML = `<div class="row">`;
@@ -90,15 +90,12 @@ function displayForecast(response) {
 }
 //
 function getForecast(coordinates) {
-  console.log(coordinates);
   let apiKey = "4368ot5e9149d5a5bd05b09133f063bf";
   let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.longitude}&lat=${coordinates.latitude}&key=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(displayForecast);
 }
 
 function displayTemperature(response) {
-  console.log(response.data);
-
   document.querySelector("#city").innerHTML = response.data.city;
   document.querySelector("#current-temperature").innerHTML = Math.round(
     response.data.temperature.current
